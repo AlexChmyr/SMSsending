@@ -110,7 +110,7 @@ $(document).ready(function() {
 
 			$.ajax({
 				type: "POST",
-				url: '//crm.voda.com.ua/ajax/sms.ajax.php',
+				url: '/ajax/sms.ajax.php',
 				data: data,
 				success: function(data){
 					alert('SMS: '+data);
@@ -133,7 +133,7 @@ $(document).ready(function() {
 // Загрузка названий шаблонов
 $.ajax({
 	type: "POST",
-	url: '//crm.voda.com.ua/ajax/snippers.ajax.php',
+	url: '/ajax/snippers.ajax.php',
 	data: "infoType=labels",
 	success: function(data){
 		$("#selectRoot").append(data);
@@ -144,7 +144,7 @@ $.ajax({
 // Загрузка тестов шаблонов
 $.ajax({
 	type: "POST",
-	url: '//crm.voda.com.ua/ajax/snippers.ajax.php',
+	url: '/ajax/snippers.ajax.php',
 	data: "infoType=contents",
 	success: function(data){
 		$(".newLead_popup").append(data);
